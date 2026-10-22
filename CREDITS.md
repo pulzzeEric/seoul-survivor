@@ -22,7 +22,7 @@ Suggestions from the community that made it into the game.
 
 | Contributor | Asset(s) |
 |---|---|
-| | |
+| Project artwork, AI-assisted with Codex and ImageGen | Last-Train Runner — original character concept ([README image](assets/last-train-runner.png), [80×80 sprite](assets/last-train-runner-sprite.png), [generation prompt](assets/last-train-runner.prompt.txt)); [CC BY-SA 4.0](LICENSE-ASSETS.md) |
 
 ## Audio
 

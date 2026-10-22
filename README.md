@@ -1,5 +1,11 @@
 # Makcha: Seoul Survivor
 
+<p align="center">
+  <img src="assets/last-train-runner.png" width="320" height="320" alt="The Last-Train Runner: a pixel-art commuter with a teal jacket, yellow backpack, iced Americano and swinging transit card, sprinting for the last train.">
+  <br>
+  <em>Last-Train Runner — coffee in hand, one transfer to go. Character concept art.</em>
+</p>
+
 > **Survive until the last train leaves.**
 
 *Makcha* (막차) is Korean for "the last train of the night." This game is a pixel-art **survivors-like roguelite** set in real Seoul landmarks. Hold out against waves of very Seoul-specific enemies, like rush-hour crowds, rolling-suitcase stampedes and people who missed the last train, until the final departure.
