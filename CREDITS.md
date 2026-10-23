@@ -23,6 +23,7 @@ Suggestions from the community that made it into the game.
 | Contributor | Asset(s) |
 |---|---|
 | Project artwork, AI-assisted with Codex and ImageGen | Last-Train Runner — original character concept ([README image](assets/last-train-runner.png), [80×80 sprite](assets/last-train-runner-sprite.png), [generation prompt](assets/last-train-runner.prompt.txt)); [CC BY-SA 4.0](LICENSE-ASSETS.md) |
+| Project artwork, AI-assisted with Codex and ImageGen | Planned roster: [Night-Shift Convenience Clerk](assets/characters/night-shift-clerk.svg), [Hongdae Busker](assets/characters/hongdae-busker.svg), [Hanbok Traveler](assets/characters/hanbok-traveler.svg), [Street-Food Tent Owner](assets/characters/street-food-owner.svg), [Late-Night Taxi Driver](assets/characters/late-night-taxi-driver.svg); [generation prompts](assets/characters/generation-prompts.json); [CC BY-SA 4.0](LICENSE-ASSETS.md) |
 
 ## Audio
 

@@ -52,6 +52,21 @@ Future idea: link stations along Seoul Subway **Line 2**, a loop around the city
 
 As in other survivors-likes, each character starts with one weapon and one passive bonus. Everything else comes from level-up picks.
 
+<table>
+  <tr>
+    <td align="center"><img src="assets/last-train-runner.png" width="160" height="160" alt="Last-Train Runner pixel-art character concept"><br><sub>Last-Train Runner</sub></td>
+    <td align="center"><img src="assets/characters/night-shift-clerk.svg" width="160" height="160" alt="Night-Shift Convenience Clerk pixel-art character concept"><br><sub>Night-Shift Convenience Clerk</sub></td>
+    <td align="center"><img src="assets/characters/hongdae-busker.svg" width="160" height="160" alt="Hongdae Busker pixel-art character concept"><br><sub>Hongdae Busker</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/characters/hanbok-traveler.svg" width="160" height="160" alt="Hanbok Traveler pixel-art character concept"><br><sub>Hanbok Traveler</sub></td>
+    <td align="center"><img src="assets/characters/street-food-owner.svg" width="160" height="160" alt="Street-Food Tent Owner pixel-art character concept"><br><sub>Street-Food Tent Owner</sub></td>
+    <td align="center"><img src="assets/characters/late-night-taxi-driver.svg" width="160" height="160" alt="Late-Night Taxi Driver pixel-art character concept"><br><sub>Late-Night Taxi Driver</sub></td>
+  </tr>
+</table>
+
+_Original character concept art; animation sheets are planned._
+
 | Character | Starting weapon | Passive |
 |---|---|---|
 | **Last-Train Runner** *(default)* | Transit Card Swipe: a quick "beep!" swing in the facing direction (melee sweep) | Move speed +10% |
