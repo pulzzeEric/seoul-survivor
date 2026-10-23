@@ -48,6 +48,22 @@ The game is **open source and community-built**. Players suggest the maps, enemi
 
 Future idea: link stations along Seoul Subway **Line 2**, a loop around the city, one stage per station.
 
+## Characters (planned roster)
+
+As in other survivors-likes, each character starts with one weapon and one passive bonus. Everything else comes from level-up picks.
+
+| Character | Starting weapon | Passive |
+|---|---|---|
+| **Last-Train Runner** *(default)* | Transit Card Swipe: a quick "beep!" swing in the facing direction (melee sweep) | Move speed +10% |
+| Night-Shift Convenience Clerk | Barcode Scanner: a straight laser through enemies (piercing) | **"1+1":** +1 projectile, like a buy-one-get-one deal |
+| Hongdae Busker | Busking Amp: soundwaves pulse around the player (aura) | Area +10% |
+| Hanbok Traveler | Selfie-Stick Flash: a flash on random enemies (random strike) | Pickup range +30%. Sightseeing means picking up everything. |
+| Street-Food Tent Owner | Tteokbokki Broth: hot puddles on the ground (zone) | **"Have another bite":** HP regeneration |
+| 🔒 Late-Night Taxi Driver | High Beams: light sweeps ahead (cone) | **"Late-night surcharge":** +20% damage after midnight |
+
+- 🔒 Secret character: unlocked by clearing Seoul Station. Miss the last train, take a taxi.
+- The MVP ships with the Last-Train Runner only. The five starting weapons above double as the MVP's five weapons, so adding the other characters later mostly means new sprites.
+
 ## Roadmap
 
 - [ ] **Phase 0 – Setup:** repo, licenses, contribution and content guidelines, choose a tech stack (candidates: Phaser 3 or plain Canvas)
