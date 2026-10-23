@@ -6,5 +6,5 @@ Use case: style-transfer. Asset type: a single original pixel-art player charact
 
 Export:
 - last-train-runner-sprite.png: generated output sampled to an 80×80 canvas with nearest-neighbor scaling, quantized to 32 RGBA colors using weighted median-cut without dithering, preserving transparency.
-- last-train-runner.png: 5× nearest-neighbor enlargement (400×400) of the native sprite; README displays it at 4× (320×320).
+- last-train-runner.png: 5× nearest-neighbor enlargement (400×400) of the native sprite; README displays it at 2× (160×160), an integer scale that keeps the pixels crisp.
 - This is a single-frame character concept, not an animation sheet or a finalized gameplay asset. The pixel grid is a README asset choice; it does not set the game's sprite-size standard.

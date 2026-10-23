@@ -1,7 +1,7 @@
 # Makcha(막차): Seoul Survivor
 
 <p align="center">
-  <img src="assets/last-train-runner.png" width="150" height="150" alt="The Last-Train Runner: a pixel-art commuter with a teal jacket, yellow backpack, iced Americano and swinging transit card, sprinting for the last train.">
+  <img src="assets/last-train-runner.png" width="160" height="160" alt="The Last-Train Runner: a pixel-art commuter with a teal jacket, yellow backpack, iced Americano and swinging transit card, sprinting for the last train.">
   <br>
   <em>Last-Train Runner — coffee in hand, one transfer to go. Character concept art.</em>
 </p>

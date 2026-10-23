@@ -1,0 +1,57 @@
+name: Stage suggestion (스테이지 제안)
+description: Suggest a Seoul landmark or neighborhood as a new stage.
+title: "[Stage] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a stage! The community votes with 👍, and top-voted ideas are reviewed each week.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Korean and/or English.
+      placeholder: Hongdae (홍대)
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where in Seoul
+      description: The landmark or neighborhood.
+      placeholder: The busking street near Hongik University Station
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What it's like
+      description: Mood, time of day, layout and any stage gimmick. Enemy and item ideas are welcome too.
+      placeholder: Night, neon signs and street buskers on every corner.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it's funny or recognizable to locals
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Sketch or reference photo (optional)
+      description: Only images you drew or took yourself.
+  - type: input
+    id: credit
+    attributes:
+      label: Credit name (optional)
+      description: How you'd like your name to appear in the game and in CREDITS.md if this is accepted.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched existing issues and this isn't a duplicate.
+          required: true
+        - label: This follows the content guidelines and original-work rules in CONTRIBUTING.md.
+          required: true

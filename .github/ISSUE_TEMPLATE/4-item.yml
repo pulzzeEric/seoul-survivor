@@ -1,0 +1,57 @@
+name: Item suggestion (아이템 제안)
+description: Suggest a power-up or pickup inspired by something from Seoul.
+title: "[Item] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an item! The community votes with 👍, and top-voted ideas are reviewed each week.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Korean and/or English.
+      placeholder: Train Lunchbox (기차 도시락)
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where in Seoul
+      description: The landmark or neighborhood it comes from.
+      placeholder: Seoul Station
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What it does
+      description: Its effect, such as healing, speed, attack speed or extra time.
+      placeholder: Heals the player.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it's funny or recognizable to locals
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Sketch or reference photo (optional)
+      description: Only images you drew or took yourself.
+  - type: input
+    id: credit
+    attributes:
+      label: Credit name (optional)
+      description: How you'd like your name to appear in the game and in CREDITS.md if this is accepted.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched existing issues and this isn't a duplicate.
+          required: true
+        - label: This follows the content guidelines and original-work rules in CONTRIBUTING.md.
+          required: true

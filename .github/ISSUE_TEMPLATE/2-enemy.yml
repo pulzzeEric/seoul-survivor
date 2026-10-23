@@ -1,0 +1,60 @@
+name: Enemy suggestion (적 제안)
+description: Suggest an enemy based on everyday Seoul life.
+title: "[Enemy] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an enemy! The community votes with 👍, and top-voted ideas are reviewed each week.
+
+        **Enemies should be situations and phenomena** (crowds, noise, being late, weather), not kinds of people.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Korean and/or English.
+      placeholder: Transfer Crowd (환승 인파)
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where in Seoul
+      description: The landmark, neighborhood or stage where it appears.
+      placeholder: Seoul Station
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What it does
+      description: How it moves and how it attacks or gets in the player's way.
+      placeholder: A wall of commuters that moves in one direction and pushes the player along.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it's funny or recognizable to locals
+      placeholder: Anyone who has transferred at rush hour knows it.
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Sketch or reference photo (optional)
+      description: Only images you drew or took yourself.
+  - type: input
+    id: credit
+    attributes:
+      label: Credit name (optional)
+      description: How you'd like your name to appear in the game and in CREDITS.md if this is accepted.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched existing issues and this isn't a duplicate.
+          required: true
+        - label: This follows the content guidelines and original-work rules in CONTRIBUTING.md.
+          required: true
