@@ -56,7 +56,7 @@ These will be finalized during Phase 1.
 
 - **Style:** pixel art with a limited palette. Gameplay uses a quarter-view (angled top-down) perspective. Stage intros and boss scenes are side-view illustrations.
 - **Sprites:** base tile size and sprite dimensions are TBD.
-- **Format:** PNG with transparency. Separate animation frames or a sprite sheet with a frame list.
+- **Format:** keep SVG source art where available; use PNG with transparency for gameplay. Separate animation frames or a sprite sheet with a frame list.
 - **Audio:** OGG and/or MP3, normalized volume.
 - **File naming:** `lowercase-with-dashes`, e.g. `seoul-station-transfer-crowd-walk.png`.
 
@@ -68,7 +68,7 @@ These will be finalized during Phase 1.
 4. Link the related issue (`Closes #123`).
 5. A maintainer will review it. Be ready for some back-and-forth.
 
-Tech stack, build steps and code style will be documented here once Phase 1 begins.
+The chosen stack is **TypeScript** with strict type checking, **Phaser 4** (prototype validation starts with 4.2.1), and **Vite**. See the [technical direction](README.md#technical-direction) for code structure and prototype acceptance criteria. Build steps and code style will be documented when the Phase 1 development environment is implemented.
 
 ### AI-assisted contributions
 

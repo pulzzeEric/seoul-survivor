@@ -79,10 +79,43 @@ _Original character concept art; animation sheets are planned._
 - 🔒 Secret character: unlocked by clearing Seoul Station. Miss the last train, take a taxi.
 - The MVP ships with the Last-Train Runner only. The five starting weapons above double as the MVP's five weapons, so adding the other characters later mostly means new sprites.
 
+## Technical direction
+
+Chosen on **23 October 2026** for a browser-first, 2D game with large enemy waves and community-created content:
+
+| Role | Choice |
+|---|---|
+| Language | **TypeScript**, with strict type checking |
+| Game framework | **Phaser 4**, starting prototype validation with **4.2.1** |
+| Development server and build | **Vite** |
+
+Phaser 4.2.1 is listed in the [official release archive](https://phaser.io/download/archive). The prototype will validate this baseline before the first playable release.
+
+### Code structure
+
+| Responsibility | Approach |
+|---|---|
+| Run flow | One combat Scene coordinates the start, pause, level-up choices and end of a run. |
+| Gameplay | Small modules handle movement, spawning, attacks and damage. |
+| Content | Typed data defines character stats, starting weapons, passives, weapon parameters and waves. All characters share the same player implementation. |
+| Weapon behavior | Implement each attack pattern once, such as a piercing projectile, aura or ground zone. Tune damage, range and cooldowns through data. A new attack pattern gets its own behavior code. |
+| Collision | Start with [Arcade Physics](https://docs.phaser.io/phaser/concepts/physics/arcade), using simple collision shapes. |
+| Quarter-view presentation | Movement and collision use a 2D plane. Draw order follows each character's foot position to create the quarter-view appearance. |
+| Repeated objects | Reuse enemies, projectiles and XP gems through object pools. |
+| Art pipeline | Keep SVG source art; use transparent PNG sprite sheets for gameplay. Sprite dimensions and animation frames will be defined during the prototype. |
+
+### First prototype and performance checks
+
+The first playable loop uses **one character, one weapon, one enemy type and a placeholder arena**: move, auto-attack, defeat enemy waves, collect XP, choose a level-up upgrade and reach the end of a run. Check whether this loop is fun before expanding the Seoul Station content.
+
+The proposed desktop stress-test target is **500 enemies and 300 projectiles active simultaneously at 60 FPS**. Select a reference device before testing, and record its hardware, browser, resolution, test duration and frame-rate/frame-time results. This is a validation target; no performance measurements exist yet.
+
+Profile enemy AI, collision handling, rendering and object allocation in that prototype. Add optimizations such as spatial partitioning where measurements identify a bottleneck. Phaser 4's renderer improvements do not remove the need to measure gameplay and physics costs.
+
 ## Roadmap
 
-- [ ] **Phase 0 – Setup:** repo, licenses, contribution and content guidelines, choose a tech stack (candidates: Phaser 3 or plain Canvas)
-- [ ] **Phase 1 – Prototype:** movement, auto-attack, enemy waves, XP and level-up choices, all with placeholder shapes. First question: is it fun?
+- [ ] **Phase 0 – Setup:** repo, licenses, contribution and content guidelines, and a development environment for the chosen TypeScript + Phaser 4 + Vite stack
+- [ ] **Phase 1 – Prototype:** the first playable loop with placeholder art, followed by the performance checks above. First question: is it fun?
 - [ ] **Phase 2 – MVP: Seoul Station, Last Train:**
   - One pixel-art arena (station plaza, old station building, Seoullo 7017)
   - 1 character, 5 weapons, 5 enemies, 1 boss
@@ -111,4 +144,4 @@ This is an original game. Genre mechanics (auto-attacks, waves, level-up picks) 
 
 ## Getting started
 
-_Coming in Phase 1._ Build and run instructions will be added once the tech stack is chosen.
+_Coming in Phase 1._ The stack is TypeScript + Phaser 4 + Vite. Build and run instructions will be added when the development environment is implemented.
